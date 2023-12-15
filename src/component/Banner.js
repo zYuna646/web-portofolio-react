@@ -4,7 +4,7 @@ import headerImg from "../assets/img/banner/rocket .png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -92,6 +92,9 @@ export const Banner = () => {
                       </a>
                       <a href="https://www.linkedin.com/in/rangga-saputra-boderingan-910016254/">
                         <FaLinkedin className="icon" />
+                      </a>
+                      <a href="https://github.com/zYuna646">
+                        <FaGithub className="icon" />
                       </a>
                     </div>
                     <button
