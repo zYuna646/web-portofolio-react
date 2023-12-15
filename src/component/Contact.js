@@ -31,7 +31,7 @@ export const Contact = () => {
                       <input type="email" value="Email : anggarangga646@gmail.com" placeholder="Email Address" disabled/>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="tel" value="Phone : +628" placeholder="Phone No." disabled/>
+                      <input type="tel" value="Phone : +6285398298129" placeholder="Phone No." disabled/>
                     </Col>
                    
                   </Row>
