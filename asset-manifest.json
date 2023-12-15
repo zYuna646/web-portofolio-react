@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/web-portofolio-react/static/css/main.331f72df.css",
+    "main.js": "/web-portofolio-react/static/js/main.ebdca571.js",
+    "static/js/787.058610be.chunk.js": "/web-portofolio-react/static/js/787.058610be.chunk.js",
+    "static/media/smoke-background-texture-black-abstract-design.jpg": "/web-portofolio-react/static/media/smoke-background-texture-black-abstract-design.7545a9c79a0e2d62cccf.jpg",
+    "static/media/foto.jpeg": "/web-portofolio-react/static/media/foto.76692830836f9ad3b1c6.jpeg",
+    "static/media/rocket .png": "/web-portofolio-react/static/media/rocket .5e830b65ea9b016fcc0e.png",
+    "static/media/Chopsic.otf": "/web-portofolio-react/static/media/Chopsic.afa6fa672315bef761c0.otf",
+    "static/media/placeholder.jpg": "/web-portofolio-react/static/media/placeholder.2373fd3c257c76130eee.jpg",
+    "static/media/logo.svg": "/web-portofolio-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/web-portofolio-react/index.html",
+    "main.331f72df.css.map": "/web-portofolio-react/static/css/main.331f72df.css.map",
+    "main.ebdca571.js.map": "/web-portofolio-react/static/js/main.ebdca571.js.map",
+    "787.058610be.chunk.js.map": "/web-portofolio-react/static/js/787.058610be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.331f72df.css",
+    "static/js/main.ebdca571.js"
+  ]
+}
