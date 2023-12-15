@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/banner/rocket .png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -81,9 +82,25 @@ export const Banner = () => {
                     conducting research. I am enthusiastic about both personal
                     growth and collaborative teamwork.
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  <span className="social-text">
+                    <div className="social-icon">
+                      <a href="https://www.facebook.com/rangga.saputraboderingan">
+                        <FaFacebook className="icon" />
+                      </a>
+                      <a href="https://www.instagram.com/zyuna646/">
+                        <FaInstagram className="icon" />
+                      </a>
+                      <a href="https://www.linkedin.com/in/rangga-saputra-boderingan-910016254/">
+                        <FaLinkedin className="icon" />
+                      </a>
+                    </div>
+                    <button
+                      className="vvd"
+                      onClick={() => console.log("lets to connect")}
+                    >
+                      Lets To Connect
+                    </button>
+                  </span>
                 </div>
               )}
             </TrackVisibility>
@@ -96,7 +113,7 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
-                  <img src={headerImg} alt="Header Img" />
+                  <img src={headerImg} alt="Header Img"  className="headerImg"/>
                 </div>
               )}
             </TrackVisibility>

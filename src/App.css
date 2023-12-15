@@ -10,9 +10,6 @@
   box-sizing: border-box;
 }
 
-.logo {
-
-}
 
 html {
   scroll-behavior: smooth;
@@ -85,7 +82,6 @@ p.danger {
   color: red;
 }
 
-/************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -99,6 +95,7 @@ nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
 }
+
 
 nav.navbar a.navbar-brand {
   width: 9%;
@@ -118,8 +115,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
 }
 
-span.navbar-text {
-  display: flex;
+span.social-text {
   align-items: center;
 }
 
@@ -156,6 +152,11 @@ span.navbar-text {
   color: white;
 }
 
+.social-icon {
+  margin-top: 5%;
+}
+
+
 .social-icon a:hover::before {
   transform: scale(1);
 }
@@ -170,7 +171,7 @@ span.navbar-text {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
-.navbar-text button {
+.social-text button {
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
@@ -182,11 +183,11 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 
-.navbar-text button span {
+.social-text button span {
   z-index: 1;
 }
 
-.navbar-text button::before {
+.social-text button::before {
   content: "";
   width: 0%;
   height: 100%;
@@ -198,11 +199,11 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 
-.navbar-text button:hover {
+.social-text button:hover {
   color: #121212;
 }
 
-.navbar-text button:hover::before {
+.social-text button:hover::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -262,6 +263,92 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('./assets/img/banner/smoke-background-texture-black-abstract-design.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.banner p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+.banner button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.banner button:hover svg {
+  margin-left: 25px;
+}
+
+.banner img {
+  animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.headerImg
+{
+  height: 200px;
+  width: 200px;
+}
+
+.txt-rotate>.wrap {
+  border-right: 0.08em solid #666;
+}
+
 .App {
   text-align: center;
 }
@@ -300,4 +387,41 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   to {
     transform: rotate(360deg);
   }
+}
+
+.contact {
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  padding: 60px 0 200px 0;
+}
+.contact img {
+  width: 25%;
+}
+.contact h2 {
+	font-size: 45px;
+	font-weight: 700;
+  margin-bottom: 30px;
+}
+.contact form input, .contact form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+
+.my-foto 
+{
+  border-radius: 10%;
+}
+
+.form-contact 
+{
+  padding-left: 30%;
+  padding-right: 30%;
 }

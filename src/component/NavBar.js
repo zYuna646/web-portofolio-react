@@ -4,7 +4,6 @@ import Navbar from "react-bootstrap/Navbar";
 import logo from "../logo.svg";
 import React from "react";
 import { useState, useEffect } from "react";
-import { FaInstagram , FaFacebook, FaLinkedin } from "react-icons/fa";
 
 export const NavBar = () => {
   const [activeLink, setactiveLink] = useState("Home");
@@ -27,7 +26,6 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home"><img className="App-logo" src={logo} alt="logo"></img></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggle-icon"></span>
         </Navbar.Toggle>
@@ -42,15 +40,6 @@ export const NavBar = () => {
               onClick={() => setactiveLink("Home")}
             >
               Home
-            </Nav.Link>
-            <Nav.Link
-              href="#skills"
-              className={
-                activeLink === "Skills" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => setactiveLink("Skilss")}
-            >
-              Skills
             </Nav.Link>
             <Nav.Link
               href="#projects"
@@ -71,23 +60,7 @@ export const NavBar = () => {
               Contact
             </Nav.Link>
           </Nav>
-          <span className="navbar-text">
-            <div className="social-icon">
-              <a href="#">
-               <FaFacebook className="icon" />
-              </a>
-              <a href="#">
-                <FaInstagram className="icon" />
-              </a>
-              <a href="#">
-                <FaLinkedin className="icon" />
-              </a>
-            </div>
-            <button
-              className="vvd"
-              onClick={() => console.log("lets to connect")}
-            >Lets To Connect</button>
-          </span>
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>
